@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* pseudo selector elements syntax 
+        element:selector{
+
+        } */
+        header li{
+            display:inline;
+        }
+        a:link{
+            color: blueviolet;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: dimgray;
+            font-size:large;
+            text-decoration: underline;
+        }
+
+        @keyframes blink{
+            0% {opacity: 1; color: gold;}
+            50% { opacity: 0; color: green;}
+            100% { opacity: 1; color: hotpink;}
+        }
+        #home{
+            animation: blink 5s ease-in infinite;
+        }
+        img:hover{
+            height: 120px;
+            width: 200px;
+        }
+
+    ul li:last-child{
+        background-color:black;
+    }
+
+    p:nth-child(3){
+        color: seagreen;
+    }
+    </style>
+</head>
+<body>
+   <marquee direction="left">this</marquee>
+    <!-- pseudo class seletors are used when there is some event -->
+    <header>
+        <li id="Home"><a href="http://www.codekul.com">Home</li>
+        <li><a href="http://www.codekul.com">About</li>
+        <li><a href="http://www.codekul.com">Blog</li>
+        <li><a href="http://www.codekul.com">Contact</li>
+    </header>
+
+    <img src="MyPhoto.jpg" width="390" height="280">
+    <div>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </div>
+    <div>
+        <li>w</li>
+        <li>e</li>
+    </div>
+</body>
+</html>

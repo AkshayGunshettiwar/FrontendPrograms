@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: x-large;
+            color: blueviolet;
+        }
+        span::first-letter{
+            color: brown;
+            font-size: x-large;
+            font-style: italic;
+        }
+        p::first-line{
+            color: cornflowerblue;
+        }
+        li::before{
+            content: '\f69a';
+        }
+        li{
+            list-style: none;
+        }
+        li::after{
+          border-left: 1px brown;;
+        }
+
+        /* it is used when we select any element (radio/checkbox) */
+        input:checked{
+            box-shadow: 1px 2px 8px red;
+        }
+        p::selection{
+            color:gold;
+            background-color: salmon;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- First line of paragraph
+    first character of paragraph
+    to add any element before an element or after an element -->
+
+    <!-- first-letter letter selector is only applied for only block level element -->
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quos quasi dolorem temporibus, a architecto
+            minus nulla nisi accusantium quibusdam, <section>eligendi quas ab. Tempore inventore exercitationem nobis et
+            soluta?</section> 
+        </p>
+    </div>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    <input type="radio" checked>
+</body>
+
+</html>

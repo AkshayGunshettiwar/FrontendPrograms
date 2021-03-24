@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial;
+  background-color:skyblue;
+}
+.one{
+    background-color: #102;
+  color: white;
+}
+.two{
+    background-color: red;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+   <center>
+    <form autocomplete="on">
+        <fieldset>
+            <legend><b>Student Form</b></legend>
+        
+        <label for="fn">First name:</label>
+        <input id="fn" type="text"><br><br>
+        <label for="fn">Last Name:</label>
+        <input id="fn" type="text"><br><br>
+        <hr style="color:black;">
+        <label for="age">Age:</label>
+        <input id="age" type="number" style="margin-left: 47px"><br><br>
+         Gender:
+         <input type="radio" name="gender" value="male"  text-color="red"> Male
+         <input type="radio" name="gender" value="female"> Female
+         <input type="radio" name="gender" value="other"> Other<br><br>
+         <hr style="color:black;">
+        <label for="f" >Email:</label>
+        <input id="f" type="email" required style="margin-left: 37px"><br><br>
+         
+        <label for="f1" >Password:</label>
+        <input id="f1" type="password" required style="margin-left: 15px"><br><br>
+        <label for="f2" >Phone Number:</label>
+        <input id="f2" type="tel" required style="margin-left: 15px" max="10"><br><br>
+        <hr style="color:black;">
+
+         
+    
+        <label for="country">Select Subject:</label>
+            <select id="country" name="country">
+           <optgroup label="Backend">
+           <option value="java">java</option>
+                       <option>spring</option>
+           <option>java8</option>
+        </optgroup>
+        <optgroup label="Frontend">
+            <option value="java">javascript</option>
+            <option>html</option>
+            <option>css</option>
+       </select><br><br>
+       <label for="time" list="tym">Choose your time from the list: </label>
+       <input list="time" name="time" id="tym" ><br><br>
+       <datalist id="time" >
+           <option value="2-3 PM">
+               <option value="3-4 PM">
+             <option value="4-5 PM">
+                 <option value="5-6 PM">
+         
+       </datalist>
+       <label for="file">
+        Profile-Picture:
+       </label>
+       
+       <input id="file" accept=" jpeg,jpe,png" type="file"><br><br>
+       <hr style="color:black;">
+       <input type="datetime-local"><br><br>
+      
+
+
+       <label>
+
+           <input type="checkbox" value="checkbox">I accept the<a href="#">Terms and Conditions</a>
+       </label><br><br>
+       <input type="button" value="Submit" class="one">
+       <input type="button" value="Clear" class="two"><br>
+    </form>
+</center>
+</fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-card {
+            border: solid 1px black;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .back-card {
+            position: absolute;
+        }
+        .front-card, .back-card{
+            backface-visibility: visible;
+
+        }
+        .flip-card:hover, .back-card:hover{
+            transform: rotateY(180deg);
+            transition-duration: 3s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flip-card">
+        <div class="front-card">
+            <h4>Front Card</h4>
+            <img src="./Image.jpeg">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam facilis eligendi eum rem
+                exercitationem quibusdam id saepe temporibus nesciunt praesentium, vitae veniam totam tenetur ut.
+                Provident, sequi est. Itaque?
+            </p>
+        </div>
+        <div class="back-card">
+            <h4>Back Card</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quos ullam mollitia ducimus blanditiis
+            obcaecati asperiores maxime dolor officiis sapiente voluptas, ab beatae reiciendis eum excepturi, veritatis
+            aspernatur, tempore assumenda.
+
+        </div>
+    </div>
+</body>
+
+</html>

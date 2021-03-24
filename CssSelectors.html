@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           font-style: italic;
+        }
+        .navigation-container{
+            color: black;
+        }
+        .custom{
+            background-color: cornflowerblue;
+        }
+        /* Descendent selectors
+        syntax:- parent element.class name space target elemenet */
+        div.container nav li{                     
+            display: inline;
+        }
+        ul li{
+            color: darkgreen;
+        }
+
+        /* child selector */
+        ul > li{
+            color: darksalmon;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS selectors</h1>
+    </header>
+
+    <div class="container navigation-container custom">
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

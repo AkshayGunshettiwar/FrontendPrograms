@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: solid 2px red;
+            display: flex;
+            flex-direction: row;
+        }
+        .items{
+            border: solid 2px blueviolet;
+        }
+
+        @media only screen and (max-width:768px){
+            .container{
+                flex-direction:column;
+            }
+            @media all and (max-width: 320px){
+            .container{
+                flex-direction: row;
+                background-color: cadetblue;
+            }
+            }
+
+            @media print and (max-width: 991px)and (orientation:portrait){
+                .container{
+                    background-color: cadetblue;
+                    font-size: xx-large;
+                }
+            }
+        }
+
+        /* wrapper class */
+
+        #leftside{
+            float: none;
+            width: auto;
+        }
+        .menuitem{
+            background: darkseagreen;
+            border: 1px solid black;
+            border-radius:4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+
+        }
+        @media screen and (min-width: 480px){
+            #leftside{
+                width: 200px;
+                float: left;
+            }
+        }
+
+       
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto minus aut tempore, odit aspernatur
+            voluptatibus voluptas error, quos eum illo nesciunt nobis dolore illum ullam quis consequatur! Tempora,
+            optio et.
+
+        </div>
+        <div class="items">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto minus aut tempore, odit aspernatur
+            voluptatibus voluptas error, quos eum illo nesciunt nobis dolore illum ullam quis consequatur! Tempora,
+            optio et.
+
+        </div>
+        <div class="items">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto minus aut tempore, odit aspernatur
+            voluptatibus voluptas error, quos eum illo nesciunt nobis dolore illum ullam quis consequatur! Tempora,
+            optio et.
+
+        </div>
+        <div class="items">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto minus aut tempore, odit aspernatur
+            voluptatibus voluptas error, quos eum illo nesciunt nobis dolore illum ullam quis consequatur! Tempora,
+            optio et.
+
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="leftside">
+            <ul id="menulist">
+                <li class="menuitem">Item 1</li>
+                <li class="menuitem">Item 2</li>
+                <li class="menuitem">Item 3</li>
+                <li class="menuitem">Item 4</li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

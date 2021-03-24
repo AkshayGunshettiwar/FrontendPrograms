@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* Transform property is used to change the state of a element from one state to another state.
+    transform values
+    translateX()
+    translateY()
+    rotateX()
+    rotateY() */
+
+        div:hover{
+            background-color: cadetblue;
+            border: 1px solid black;
+            width: 400px;
+            /* transform: translateX(300px); */
+
+            /* transform: rotateX(45deg); */
+
+            /* transform: skewY(65deg);  */
+/* 
+    This will increase size in X and Y direction */
+            /* transform: scaleX(2);      */
+
+            /* transform: scaleY(2);
+
+            transform: perspective(300px) rotateZ(25deg); */
+
+            transition-duration: 4s;
+            transition-delay: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        One
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flip-card{
+            background-color: transparent;
+            height: 300px;
+            width: 300px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        .flip-card-inner{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover, .flip-card-inner, .flip-card-back:hover{
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+     
+        }
+        .flip-card-front{
+            /* background-color: #bbb; */
+            color: black;
+        }
+        .flip-card-back{
+            background-color: darkolivegreen;
+            color: blanchedalmond;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="./MyPhoto.jpg" style="width: 300px; height: 300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Akshay Gunshettiwar</h1>
+                <p>BCA|FULL STACK JAVA DEVELOPMENT
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, et voluptatem! Error expedita
+                    doloremque libero, tempore laborum quidem odio quos perspiciatis, ratione minus soluta nesciunt
+                    laboriosam, fugit laudantium non ipsam.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
