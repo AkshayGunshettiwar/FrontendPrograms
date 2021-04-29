@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css fonts</title>
+    <style>
+       h1 {
+         font-weight: 200;
+        }
+        p{
+           font-size: 30px;
+           font-weight: bold;
+           font-style: italic;
+           font-variant: small-caps;
+        }
+
+/* to use downloaded fonts */
+        @font-face {
+            font-family: abc;   
+            /* abc a random name to use it later */
+            src: url('foldername/font name.ttf');
+        }
+        #par{
+            font-family: abc;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam doloribus labore quae, sit id, unde explicabo
+        dolore ducimus facilis facere vitae dolorem tempore atque. Impedit, aspernatur! Libero ut ipsam voluptates?</p>
+        <p id="par">Paragraph</p>
+</body>
+
+</html>

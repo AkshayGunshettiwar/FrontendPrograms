@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Absolute unit */
+
+        #parent{
+            border: 1px solid red;
+            /* width: 100mm; */
+          /* height: 10cm; */
+          /* width: 7in; */
+          height: 100px;
+         
+
+        /* Relative Unit */
+
+        }
+        #child{
+           border: solid 1px black;
+           /* width: 50%; */
+           /* height: 50vh; */
+           width: 40vw;
+        }
+
+        /*  */
+        #parent1{
+            font-size: 30px;
+            /* font-size: 10vw; */
+            /* for responsive text */
+        }
+        #child1{
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <p>This is parent div </p>
+        <div id="child">
+            <p>This is child div</p>
+        </div>
+    </div>
+
+    <div id="parent1">
+        <p>This is parent div </p>
+        <div id="child1">
+            <p>This is child div</p>
+        </div>
+    </div>
+</body>
+
+</html>

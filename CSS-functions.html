@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:skyblue;
+            --btn-color:red;
+            --text-color:white;
+        }
+        #fun {
+            background-color: cadetblue;
+            height: 200px;
+            /* width: 70%;    */
+            /* Remaining portion will vary whenever we resize the browser page. */
+
+            width: calc(100% - 200px);
+            /* Remaining portion will stay as it is when we resize the browser page(ie. 200px space will not change) */
+        }
+        #google{
+            padding: 10px 30px;
+            margin: 20px;
+            background-color: cornflowerblue;
+            color: white;
+            text-decoration: none;
+        }
+
+        #insta{
+            padding: 10px 30px;
+            margin: 20px;
+            text-decoration: none;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fun"></div>
+    <br>
+    <hr>
+    <a href="google.com" id="google">Google</a>
+    <a href="google.com" id="insta">Instagram</a>
+</body>
+
+</html>

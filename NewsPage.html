@@ -6,140 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .inline {
-            text-decoration: none;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font: size 500px;
-            
-        }
-        .inline a:link{
-            text-decoration: none;
-        }
-        
+    <link rel="stylesheet" href="NewsPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .container {
-            list-style-type: none;
-            padding: 10px;
-            overflow: hidden;
-            background-color: red;
-            color: white;
-            display: block;
-            margin-left: 10px;
-            
-        }
-        .container a{
-            margin-left: 10px;
-            margin-right: 1px;
-        }
-        .container a:link{
-            color: white;
-            text-decoration: none;
-        }
-
-        div.container a+a {
-            border-left: 1px solid black;
-            height: auto;
-        }
-
-        .container li::after{
-            border-left: 1px solid black;
-        }
-
-       
-
-
-
-        a:hover {
-            color: darkorange;
-        }
-        a:visited{
-            color: white;
-        }
-
-        .ad {
-            font-size: small;
-        }
-
-        img:hover {
-            height: 120px;
-            width: 200px;
-        }
-        .img{
-         height: 150px;
-         width: 150px;
-         padding-right: 10px;
-        }
-    
-        .pic {
-            display: flex;
-            flex-direction: row;
-            width: 100px;
-            height: 100px;
-
-        }
-
-        .edit {
-            display: flex;
-        }
-        .row-card{
-            display: flex;
-            flex-direction: column;
-            
-        }
-        #footer{
-            background: black;
-	        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	        box-sizing: border-box;
-	        width: 100%;
-	        text-align: left;
-	        font: bold 16px sans-serif;
-	        padding: 55px 50px;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-
-        }  
-        form {
-        background-color: rgb(136, 48, 48);
-        width: 100%;
-        height: 34px;
-        border-radius: 5px;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-      }
-
-      input {
-        all: unset;
-        font: 16px system-ui;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-      }
-
-      ::placeholder {
-        color: #fff;
-        opacity: 0.7; 
-      }
-
-      svg {
-        color: #fff;
-        fill: currentColor;
-        width: 24px;
-        height: 24px;
-        padding: 10px;
-      }
-
-      button {
-        all: unset;
-        cursor: pointer;
-        width: 44px;
-        height: 44px;
-      }
-        
-    </style>
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -171,34 +43,11 @@
        <a href="https://www.indiatoday.in/technology">&nbsp TECH</a>
        <a href="https://www.indiatoday.in/sports">&nbsp SPORTS</a>
        <a href="">&nbsp DIU</a>
-       <a href="/livetv"><svg version="1.1" id="Layer_1"  &nbsp xmlns="http://www.w3.org/2000/svg" &nbsp 
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
-                viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                <path id="hovesvg" &nbsp fill="#FFFFFF"
-                    d="M22,7h-8.17l4.76-4.76c0.39-0.39,0.39-1.02,0-1.41c-0.39-0.39-1.02-0.39-1.41,0l-5.13,5.13L6.91,0.83 c-0.39-0.39-1.02-0.39-1.41,0c-0.39,0.39-0.39,1.02,0,1.41L10.25,7H2C0.9,7,0,7.9,0,9v12c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2V9 C24,7.9,23.1,7,22,7z M22,20c0,0.55-0.45,1-1,1H3c-0.55,0-1-0.45-1-1V10c0-0.55,0.45-1,1-1h18c0.55,0,1,0.45,1,1V20z">
-                </path>
-            </svg></a><br><br>
-            <form role="search" id="form">
-                <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
-                <button>
-                  <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-                </button>
-              </form>
-              <script>
-                const f = document.getElementById('form');
-                const q = document.getElementById('query');
-                const google = 'https://www.google.com/search?q=site%3A+';
-                const site = 'pagedart.com';
-          
-                function submitted(event) {
-                  event.preventDefault();
-                  const url = google + site + '+' + q.value;
-                  const win = window.open(url, '_blank');
-                  win.focus();
-                }
-          
-                f.addEventListener('submit', submitted);
-              </script>    </div>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+        <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+      </svg>
+      <i class="bi bi-tv" style="padding-bottom: 30px;"></i>
+       
     </div>
 
     </div><br>
@@ -211,46 +60,223 @@
         <h1 style="color: black;"><b>Home</b></h1>
         <hr style="color:black;">
     </div>
+    
 
-    <div class="edit">
-        <div class="pic">
-            <img src="stores.jpg" height="150px" width="150px">
-            
-            <span title="iSpy: Your guide to the hottest new stores and products"><a
-                    href="/magazine/supplement/story/20191125-ispy-your-guide-to-the-hottest-new-stores-and-products-1619393-2019-11-15">iSpy:
-                    Your guide to the hottest new stores and products</a></h2>
-                <p>Here's a list of newly launched products.</p>
-            </span>
-        </div>
-
-        <div class="pic">
-            <img src="Tech-Talks-600x315.jpg" >
+    <header class="header" style="margin-top: -150px">
+        <h1>The Envato Tuts+ Report</h1>
+        <h2><a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-news-website-layout-with-flexbox--cms-26611">Read tutorial</a></h2>
+      </header>
         
-            <span title="Tech talk"><a href="/magazine/supplement/story/20191125-tech-talk-1619359-2019-11-15">Tech
-                    talk</a></h2>
-                <p>Whether you are a gadgets veteran or a gizmo newbie, technology has
-                    percolated into all aspects of our life. Our line-up of the latest products.</p>
-            </span>
+       <main class="main columns">
+        <section class="column main-column">
+          <a class="article first-article" href="#">
+            <figure class="article-image is-4by3">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
+            </figure>
+            <div class="article-body">
+              <h2 class="article-title">
+                Hello World
+              </h2>
+              <p class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
+              </p>
+              <footer class="article-info">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </footer>
+            </div>
+          </a>
+      
+          <div class="columns">
+            <div class="column nested-column">
+              <a class="article" href="#">
+                <figure class="article-image is-16by9">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-02-lo.jpg" alt="">
+                </figure>
+                <div class="article-body">
+                  <h2 class="article-title">
+                    Hello World
+                  </h2>
+                  <p class="article-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                  </p>
+                  <footer class="article-info">
+                    <span>By Joe Smith</span>
+                    <span>42 comments</span>
+                  </footer>
+                </div>
+              </a>
+            </div>
+      
+            <div class="column">
+              <a class="article" href="#">
+                <figure class="article-image is-16by9">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-03-lo.jpg" alt="">
+                </figure>
+                <div class="article-body">
+                  <h2 class="article-title">
+                    Hello World
+                  </h2>
+                  <p class="article-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <footer class="article-info">
+                    <span>By Joe Smith</span>
+                    <span>42 comments</span>
+                  </footer>
+                </div>
+              </a>
+              <a class="article" href="#">
+                <div class="article-body">
+                  <h2 class="article-title">
+                    Hello World
+                  </h2>
+                  <p class="article-content">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <footer class="article-info">
+                    <span>By Joe Smith</span>
+                    <span>42 comments</span>
+                  </footer>
+                </div>
+              </a>
+              <a class="article" href="#">
+                <div class="article-body">
+                  <h2 class="article-title">
+                    Hello World
+                  </h2>
+                  <p class="article-content">
+                    Lorem ipsum dolor sit amet feugiat facilisis.
+                  </p>
+                  <footer class="article-info">
+                    <span>By Joe Smith</span>
+                    <span>42 comments</span>
+                  </footer>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      
+        <section class="column">
+          <a class="article" href="#">
+            <figure class="article-image is-3by2">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-04-lo.jpg" alt="">
+            </figure>
+            <div class="article-body">
+              <h2 class="article-title">
+                Hello World
+              </h2>
+              <p class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <footer class="article-info">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </footer>
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-body">
+              <h2 class="article-title">
+                Hello World
+              </h2>
+              <p class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <footer class="article-info">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </footer>
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-body">
+              <h2 class="article-title">
+                Hello World
+              </h2>
+              <p class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <footer class="article-info">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </footer>
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-body">
+              <h2 class="article-title">
+                Hello World
+              </h2>
+              <p class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <footer class="article-info">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </footer>
+            </div>
+          </a>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+        <div class="column">
+        <ul>
+        <li class="title">LEVIOOSA</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </ul>
         </div>
-        <div class="row-card">
-            <img src="">
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, magni! Laboriosam maiores sint fuga
-                dolorum rem? Quaerat atque magni doloribus nostrum earum culpa, illum repellendus similique possimus in
-                eum a!
-            </span>
-
+        
+        <div class="column">
+        <ul>
+        <li class="title">OTHER LINKS</li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Tickets</a></li>
+        </ul>
         </div>
-    </div>
-
-    <footer id="footer">
-        <div class="footer-top-link" style="color: white;"> INDIATODAY.IN</div>
-        <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/IndiaToday/" title=""><i class="fa fa-facebook"></i></a>
-
-
-    </footer>
-
-
+        
+        <div class="column">
+        <ul>
+        <li class="title">SHORT CUT</li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">About Us</a></li>
+        </ul>
+        </div>
+        
+        <div class="column">
+        <ul>
+        <li class="title">NEWSLETTER</li>
+        <li>
+        <form action="#" method="post">
+        <input type="email" name="email" placeholder="Email*" maxlength="80" required /><button class="btn1"><i class="fa fa-paper-plane"></i></button>
+        </form>
+        </li>
+        <li>
+        <a href="#" title="Address,State,Country,Pincode"><i class="fa fa-map-marker"></i></a>
+        <a href="#"><i class="fa fa-phone"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </footer>
+        <div class="sub-footer">
+        INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+        </div>
+        
+    
 
 </body>
 

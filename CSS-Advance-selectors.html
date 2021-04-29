@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        li{
+            color: brown;
+        }
+        /* pseudo class */
+        a:hover{
+            color:darkgoldenrod;
+        }
+        /* pseudo element */
+        p::first-line{
+            color: darkmagenta;
+        }
+        /* Attribute selector  :element with =sign called attribute*/
+        a[href="NewsPage.html"]{
+            color: deeppink;
+        }
+        input[type=text]{
+            border: 1px solid blueviolet;
+            border-radius: 10px;
+        }
+        /* Universal selector */
+        /* *{
+            border: 1px solid darkslategray;
+        } */
+
+        /* combinator selectors */
+        /* 1)Descendent selector */
+        div a{
+            font-size: 30px;
+        }
+
+        /* Child combinator */
+          div>h1{
+             border: 10px solid red;
+          }
+
+        /* 2)adjecent selector */
+          div + a{
+              color: seagreen;
+          }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente corrupti fuga hic quos ipsum incidunt
+            id blanditiis consequuntur. Nam corporis odit ad sapiente dolore eos in, dolorum eum velit, sequi ut
+            quaerat, corrupti id molestiae quibusdam nihil quae. Dolorem placeat qui alias distinctio sunt expedita, id
+            nihil quis exercitationem excepturi tenetur saepe, odit animi praesentium explicabo totam eius quibusdam
+            perspiciatis dolorum, quasi possimus similique! Aperiam velit soluta maxime consequatur quia praesentium
+            necessitatibus officia dolor labore maiores sequi eveniet ab voluptatem quisquam eius ducimus sed est
+            suscipit, laudantium magni repellendus quis fugiat nemo! Molestiae, autem nemo. Assumenda officia
+            consectetur doloremque ipsum, dicta eum, adipisci magni magnam animi quisquam, blanditiis nesciunt esse!
+            Totam odit praesentium nisi! Tempore repellendus cupiditate sit fuga deleniti vero, earum voluptates laborum
+            libero voluptatem adipisci fugit, voluptas debitis cum, praesentium exercitationem itaque nesciunt!
+            Praesentium incidunt, laboriosam voluptate quod sint error aliquam suscipit iusto quos, iure deleniti optio
+            voluptas velit. Quibusdam cum rerum aut eos atque consequatur iure. Molestias voluptatem laborum ullam
+            dolor, aliquid amet, quaerat a assumenda maiores eum necessitatibus quae quisquam voluptas cum ducimus
+            blanditiis tenetur modi laboriosam quo eius! Hic suscipit quaerat, nemo voluptatibus in voluptate laboriosam
+            aut eveniet eos quidem soluta incidunt esse ducimus.
+
+        </p>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <ul>
+            <li>List1</li>
+            <li id="list2">List2</li>
+            <li>List3</li>
+            <li>List4</li>
+            <li class="classlist5">List5 <a href="NewsPage.html">News</a></li>
+            <li class="classlist5">List6</li>
+            <li>List7 <a href="">yahoo</a></li>
+            <li>List8</li>
+        </ul>
+        
+    </div>
+    <a href="#">Direct Child</a>
+    <a href="">Outside Link</a>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "E:\\FRONTEND-WORK\\Music-School-Website"
+		},
+		{
+			"path": "E:\\FRONTEND-WORK\\BOOTSTRAP"
+		},
+		{
+			"path": "E:\\FRONTEND-WORK\\Javascript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.CustomBrowser": "microsoft-edge",
+		"liveServer.settings.multiRootWorkspaceName": "HTML-CSS"
+	}
+}
